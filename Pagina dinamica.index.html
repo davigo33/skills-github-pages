@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Felipe González García</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Helvetica', Arial, sans-serif;
+        }
+        .marquee {
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            position: relative;
+        }
+        .marquee span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 10s linear infinite;
+            font-size: 5rem; /* Increase font size */
+            transform: skewX(-10deg); /* Add skew for inclination */
+            font-style: italic; /* Make text italic */
+        }
+        .marquee span:nth-child(odd) {
+            animation-direction: reverse;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+    <div class="container mx-auto px-4 py-8">
+        <div class="flex justify-between items-start border-b border-gray-700 pb-4">
+            <div>
+                <h1 class="text-red-600 font-bold text-lg">DAVID FELIPE GONZÁLEZ GARCÍA</h1>
+                <p class="italic font-bold">CREATIVO PUBLICITARIO<br>& MULTIDISEÑADOR</p>
+            </div>
+            <div class="text-right">
+                <p class="text-red-600 font-bold">ABOUT</p>
+                <p class="text-red-600 font-bold">EMAIL</p>
+                <p class="text-red-600 font-bold">LINKEDIN</p>
+            </div>
+        </div>
+        <div class="mt-8 space-y-4">
+            <div class="flex justify-between items-center border-b border-gray-700 py-2">
+                <div class="marquee"><span>STORYTELLING</span></div>
+                <p class="text-4xl text-red-600"><i class="fas fa-arrow-left"></i></p>
+                <div class="marquee"><span>MOODBOARD</span></div>
+            </div>
+            <div class="flex justify-between items-center border-b border-gray-700 py-2">
+                <div class="marquee"><span>DAVID</span></div>
+                <div class="marquee reverse"><span>REFERENCIAS</span></div>
+                <p class="text-4xl text-red-600"><i class="fas fa-arrow-left"></i></p>
+            </div>
+            <div class="flex justify-between items-center border-b border-gray-700 py-2">
+                <div class="marquee"><span>DISEÑOS</span></div>
+                <p class="text-4xl text-red-600"><i class="fas fa-arrow-right"></i></p>
+                <div class="marquee reverse"><span>BIR</span></div>
+            </div>
+            <div class="flex justify-between items-center border-b border-gray-700 py-2">
+                <div class="marquee"><span>ORÍGENES</span></div>
+                <div class="marquee reverse"><span>FORGIVE ME</span></div>
+                <p class="text-4xl text-red-600"><i class="fas fa-arrow-left"></i></p>
+            </div>
+            <div class="flex justify-between items-center border-b border-gray-700 py-2">
+                <div class="marquee"><span>NATIONALE NEDERLANDEN</span></div>
+                <div class="marquee reverse"><span>DADS</span></div>
+            </div>
+            <div class="flex justify-between items-center border-b border-gray-700 py-2">
+                <div class="marquee"><span>MOST TENDER PLACE</span></div>
+                <p class="text-4xl text-red-600"><i class="fas fa-arrow-left"></i></p>
+                <div class="marquee reverse"><span>ELPO</span></div>
+            </div>
+            <div class="flex justify-between items-center border-b border-gray-700 py-2">
+                <div class="marquee"><span>ORÍGENES</span></div>
+                <div class="marquee reverse"><span>COACH JULIEN</span></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
